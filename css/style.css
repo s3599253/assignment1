@@ -15,9 +15,14 @@ img {
 
 div {
   display: block;
-	padding: 2em;
+	padding: 1em;
 }
 
 .tests {
 	display:grid;
+}
+
+.intro {
+	display: grid;
+	grid-template-columns: 50% 50%;
 }
