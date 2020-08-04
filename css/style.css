@@ -17,3 +17,7 @@ div {
   display: block;
 	padding: 1em;
 }
+
+.tests {
+	display:grid;
+}
