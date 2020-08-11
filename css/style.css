@@ -22,7 +22,3 @@ div {
 	display:grid;
 }
 
-.intro {
-	display: grid;
-	grid-template-columns: 50% 50%;
-}
