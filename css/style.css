@@ -30,10 +30,13 @@
   color: black;
 }
 
+.title {
+margin-top: 50px;	
+}
+
 
 body {
 	font-family: Arial;
-	margin-top: 50px;
 }
 
 h2 {
