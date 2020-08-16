@@ -10,116 +10,227 @@
 	
   <link rel="stylesheet" href="css/style.css" />
 	
-<div class="navbar" />
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="header">
+  <h1>Welcome to My Profile</h1>
+  <p>Introduction to Information Technology </p>
+  <p>COSC1078</p>
+</div>
+
+
+<div class="navbar">
   <a href="#Personal">Personal Information</a>
   <a href="#Interest">Interest in IT</a>
   <a href="#Ideal">Ideal Job</a>
-  <a href="#Personality">Personality Test</a>
+  <a href="#Personality">Personal Profile</a>
   <a href="#Project">IT Project</a>
-</div> 
-
-</head>
-
- <body>
-	 
-<h1 class="title"> Welcome to my Profile </h1>
-	 
-	 
-<div class="row">
-  <div class="side">
-	<h2 id="Personal"> Personal Information </h2>
-	 
- <img src="img/avatar.PNG" class="avatar" /> 
-	 
-	 <ul> 
-		 <li> Name: Johnny Le </li>
-		 <li> Student ID: s3599253 </li>
-		 <li> Email: s3599253@student.rmit.edu.au </li>
-	</ul>
-<br>
-
-Hello, my name is Johnny Le. I am 23 years of age and my background is Vietnamese. I can speak 2 languages - English and Vietnamese. I am currently studying Bachelor of Business majoring in Information Systems, I am currently
-in my final semester and will graduate at the end of 2020. I have worked in various retail jobs as a teenager and am now working in the banking industry as
-a customer service specialist within a branch. One of my hobbies is going to the gym and I have a pet dog whose breed is Maltese x Shihtzu. 
-	</div>
-  <div class="main">
-	<div class="intro">
-<h2 id="Interest"> Interest in IT </h2>
-<p>
-As I have an analytical mindset, an introvert and like working by myself and with complex issues, I am naturally inclined to be working in the IT industry.
-I love new technology and have an innovative mindset which aligns with the neverending innovations of IT. I have experience in HTML, CSS and a bit of Python
-which I really enjoy and hope it will help me in my future endeavours. I chose RMIT as RMIT is one of the leading Universities in technology and business. 
-	It is also situated in the CBD which is a convenient location for me. At RMIT, I expect to learn both Business & IT skills that will ensure my employability
-	in the future. 
-</p>
-
-	<h2 id="Ideal"> Ideal Job </h2>
-	<p> My future career aspirations would be to be a Business Analyst as I enjoy finding solutions to complex issues and like working with numbers. It
-gives a variety of both the Business side and IT side of things which I find is a perfect balance for me with my current work experience background and
-current University studies.
-To be an analyst, one would first require to have exceptional communication skills as they are required to be the bridge between different areas of a business
-and to be able to understand and translate it to other people. They are required to talk with stakeholders, be in charge of projects, and deal with a lot 
-of people. I find that with my current role at work as a Customer Service Specialist I feel that I have the necessary communication skills as I deal with
-customers on a daily basis which develops my communication skills
-Another skill of a BA is to be able to solve issues. I have done projects in Uni where I am able to understand a business process, both high level and low level
-to be able to solve a particular business problem. I enjoy this as I have to combine both of my Business and IT skills.
-Another required skill of a BA is IT skills such as programming, SQL and data visualisation tools. This helps BA to give meaning to a dataset or help create
-solutions such as automating a task to make a process more efficient. I have worked with SQL and Python in my previous Univeristy courses which I find to 
-be very enjoyable and will be a very important skill needed for a BA.
-A BA would generally require someone to have a degree in Business, IT, IS or statistics. I am currently studying Business (Information Systems) and am
-going to graduate end of the year which will definitely bring me one step closer and be more qualified to be able to become a BA. </p>
- </div>
-	</div>
 </div>
 
-	 <div>
+<button id="myBtn"><a href="#top">Back to top</a></button>
+
+<div class="row">
+  <div class="side">
+    <div id="Personal"></div>
+    <h2>Personal Information</h2>
+
+   <img src="img/avatar.PNG" class="avatar" />  
+   <ul> 
+    <li> Name: Johnny Le </li>
+    <li> Student ID: s3599253 </li>
+    <li> Email: s3599253@student.rmit.edu.au </li>
+ </ul>
+    <p>
+      Hello, my name is Johnny Le. I am 23 years of age and my background is Vietnamese. I can speak 2 languages - English and Vietnamese. I am currently studying Bachelor of Business majoring in Information Systems
+      and in my final semester. I have worked in various retail jobs as a teenager and am now working in the banking industry as
+      a customer service specialist within a branch. One of my hobbies is going to the gym and I have a pet dog whose breed is Maltese x Shihtzu. </p>
+       <a href="mailto:s3599253@student.rmit.edu.au"> <button> Contact</button>
+      </a> 
+   
+  </div>
 
 
+  <div class="main">
+    <div id="Interest"></div>
+    <h2>Interest in IT</h2>
+    <p>
+      My interest in IT began when I was very young as I was always interested in technology due to games. What makes IT so interesting to me is because of my curiosity 
+      about how everything works. As I am an introvert possessing an analytical & curious mindset, I have a natural interest in IT and plan to work in IT as my career. 
+      I have had experience in SQL, HTML, CSS and a bit of Python through my previous classes which I really enjoy and hope it will help me in my future career endeavours.
+       I also have basic experience in Linux, routers and networks. 
+      </p>
+  
+    <br>
+
+    <div id="Ideal"></div>
+    <h2>Ideal Job</h2>
+    <br>
+    <a href="https://hire.withgoogle.com/public/jobs/kogancomau/view/P_AAAAABmAAAKCbjytsuZ0pA ">Link to job position</a>
+    <img src="img/job1.PNG" /> 
+    <img src="img/job2.PNG" /> 
+    <p> This position is for a Business Analyst at Kogan. This role involves interacting with all areas of the business, analysing and visualising data, 
+      developing and implementing solutions through critical thinking and clever decision-making. The reason for my interest in this position is because of 
+      my career goal to be a Business Analyst and my interest in eCommerce. I have also done a personality test which suggests jobs and one of it was being
+      an Analyst as I possess and analytical mindset. The qualifications required for this position is to have a degree in a similar field such 
+      as IT, engineering, business and analytics. It also you requires you to have an exceptional record of academic results. You are required to have critical thinking 
+      skills, being able to communicate complex ideas and communicate affectively within all areas of the business. In terms of programs and systems that you are required 
+      to know, you need to know Microsoft Excel on an advanced level,  being able to use BI platforms such as Tableau or Power BI and able to use a relational database
+       management systems such as SQL. The skills I currently possess is having critical thinking skills, great problem-solving skills and having high attention to detail.
+        I know how to use SQL and Excel well however not in an advanced level that is needed.  I have good communication skills, but it is something that I need to improve 
+        in to become an effective communicator to all levels in the business. I am currently on my way to getting a University Degree, graduating at the end of 2020. 
+        The job requires an outstanding academic record, which I hopefully should achieve by the end of 2020. So far, most of my results have been awarded with HD. 
+        In order to gain the required system and program skills for this position I will need to self-study or do an online course to learn Microsoft Excel, BI platforms 
+        and SQL and possibly gain a certification from it. My communication skills will naturally develop as I continue working in jobs where I’m required to talk effectively.   
 </p>
+  </div>
+</div>
+
+<div class="main">
+  <div id="Personality"></div>
+
+  <div class="profile">
+  <h2>Personal Profile</h2>
+  <h3>Myer Briggs Test</h3>
+  <img src="img/personalitytest.PNG" /> 
+  <p></p>
+
+  <h3>Big Five Personality Test</h3>
+
+<img src="img/bigfive.png" alt="big five test">
+  <p>
+    With the Big Five Personality test, it shows that I possess a mindset where I am able to think abstractly and in complex ways. I am higher than average in my 
+    Openness score which I got 75% compared to the 58% average score. I also scored really high in Neuroticism getting a 77% which means I have a tendency to 
+    experience negative emotions. I find that this is due to me being very introverted and always overthinking.
+  </p>
+
+<h3>Learning Style Test</h3>
+<img src="img/learningstyle.png" alt="learning style test">
 <br>
-	 
+<a href="http://www.educationplanner.org/students/self-assessments/learning-styles-quiz.shtml?event=results&A=7&V=9&T=4">Link to test results</a>
 
-	
-	<div>
-	<h2 id="Personality"> Personality Test </h2>
-		<div class="tests">
-		 		 <!-- Image -->
-			<img src="img/personalitytest.PNG" />
+<p>My results of my learning style show that I am a visual leaner. It is best for me to learn by sight through making flashcards, writing down key ideas, or colour code things. 
+  I do sometimes find it hard to follow directions. My eyesight at the moment is fine and probably doesn’t need to be checked as suggested. Although it does say that I am attracted
+   to colours and it may assist in my learning, I am actually colourblind which I find is pretty amusing. 
+  </p>
+  
 
-			 <img src="img/test1.PNG" />
+<h3>Job Assessment Test</h3>
+<img src="img/test1.PNG">
 
-			 <img src="img/test2.PNG" />
-		 </div>
-		 
-	 <p> As shown with the results, I am a person who is quite reserved however I can work with with numbers and complex issues. My mind can
-	come with innovative solutions. This works well with being a BA however, it may require me to step outside of my comfort
-	zone and be more of an outgoing person to communicate effectively. 
-	These results will potentially impact the way I work in teams. As I am a person who enjoys working alone and autonomously,
-	I won't be able to work in a team in a prolonged length of time. However, if I am assigned I task to complete by myself,
-	it is guaranteed that I will get it done, exceptionally well and within the deadline.
-	When forming a team, I can be the person helping to come up with ideas and solutions. I am probably not great in big teams
-	where there are discussions. However, it will be fine if it is a smaller capacity. I will need another person who is 
-	more outgoing to be the team leader to balance out the personalities in the team. 
-	 </p>
-	 </div>
-	 
-	 <div>
-	<h2 id="Project"> Project Idea </h2>
-	 <p> My project idea relates to Internet of Things. As technology is exponentially growing, it is without a doubt
-		 that it will be an important part of a person's life. Currently there are many IOT technology, such
-		 as Google Home, Smart Fridges, Smart TVs, Smart Lights. To build upon this growing industry, I would
-		 to suggest is similar to Google Home however would be centralised and connected to all devices. As
-		 you wake up, coffee machine will be automatically made, while air conditioning will turn on depending
-		 on the temperature to ensure you step out of bed in comfort. </p>
-	</div>
-	 </div>
-		 
- </body>
-	
-   <!-- Footer -->
-		<footer>
-		  <p>Johnny Le <br> Email:<a href="mailto:s3599253@student.rmit.edu.au">s3599253@student.rmit.edu.au</p>
-		  <a href="../index.html">Back Home?</a>
-		</footer>  
+<p>This test here was an online job assessment test I did recently which explains really well my learning style which is why I chose to include it here. 
+  The results emphasise that I like working with numbers, are a quick thinker and being able to find solutions to problems. 
+</p>
 
+
+<p>Overall, with these test results it is shown that I am a person who is quite reserved however I can work with numbers and complex issues. 
+  My mind is able to come up with innovative solutions when faced with a rather complex problem. These results will potentially impact the way I work in teams. 
+  As I am a person who enjoys working alone and autonomously, I won't be able to work in a team in a prolonged length of time and I will prefer working by myself. 
+  If I am assigned a task to complete, I will be able to get it done within the agreed deadline. When forming a team, I am pretty flexible with whoever I get, 
+  however I would like a person who is a bit extroverted to be able to balance out our team. I am probably not great in big teams where there are discussions though 
+  it will be fine if it is a smaller capacity.
+</p>
+</div>
+
+
+
+  <div id="Project"></div>
+  <h2> Project Idea </h2>
+ 
+  <h3>Overview</h3>
+  <p>An IT project that I would like to do is a fingerprint verification system. This will be used for more systems and programs rather than just with phones. 
+    This can be used to log in to accounts, access your banking accounts, used as a payment processer rather than a PIN. This will help it make more convenient 
+    for people as they don’t have to remember so many passwords, and it is much harder to hack due to everyone having a unique fingerprint. 
+  </p>
+
+<h3>Motivation</h3>
+<p>My motivation for this project was that I found it frustrating trying to remember so many passwords and PINs, as well as carrying around keys and cards, 
+  and found the fingerprint verification on phones a convenient solution and would like to implement it in more areas in life. Currently, the fingerprint 
+  is an exceptionally unique method of human identification. It is already in use in smartphones and have been used to identify individuals in crime scenes. 
+  It will be extremely practical and convenient since rather than using a key or carrying something around, your fingers act like the key and you would not 
+  lose it like you would with a key. It can also reduce costs for system management and visitor identification, removing the need for cards or keys. 
+</p>
+ 
+<h3>Description</h3>
+The fingerprint verification system will be an identification software which store the fingerprint data of a person. Whenever a fingerprint authentication is 
+required, the software will match it with what we have in the database. This software can be integrated with other systems and also can be used as an additional 
+verification method rather than a standalone verification to increase security for higher risk cases. The identification method is performed in three stages:
+<ol>
+<li> A picture is taken of the fingerprint electronically. The end result will turn out to be a black and white photograph of the ridges in the fingerprint.</li>
+<li> The fingerprint then is translated into a numerical code, which stores the fingerprint’s unique data. Such characteristics in code are the arches and loops 
+and their distance from each other.</li>
+<li> The numerical code is then compared with the stored data to find a match.</li>
+</ol>
+
+<p> There are drawbacks since that fingertips is flexible, sometimes making it hard for identification. The dryness of the skin , 
+temperature and the force in which the finger is pressed against the reader are all factors that can affect the authentication. It
+also may be very costly initially to be able to develop this software.
+</p>
+
+<h3>Tools and Technologies</h3>
+
+<ul class="list">
+<li> Computer</li>
+<li> Programming Software</li>
+<li> Windows Operating System</li>
+<li> Database System (Microsoft Access Database)</li>
+<li> Microsoft Visual Studio</li>
+<li> USB </li>
+<li> Fingerprint Scanning Hardware </li>
+</ul>
+
+  <h3>Skills Required</h3>
+  <p>For this project, it will require me to know more about system verification and how it works, programming and ethical 
+    hacking in order to prevent fraud. Would also require business/marketing skills in order to provide it to the public. 
+    Although, this may run into some issues regarding its feasibility and people not agreeing to use their fingerprints. 
+    It will require large funding and capital in order to provide to the mass market. This does not need to be the only 
+    verification method, as those with higher risk, can use it as apart of a 2-factor authentication. 
+    This project would require having advanced level of programming and possibly algorithms knowledge. 
+    Also require complex IT skills to be able to develop the software, the interface and connecting it with the hardware. 
+    Would also require database management skills to be able to create, maintain and delete fingerprint records. 
+    Also great to have information security skills to protect the system from being hacked.
+  </p>
+
+<h3>Outcome</h3>
+<p>If the project is successful, it will be able to change the way people access their accounts or entries to buildings. 
+  It will help cut costs of many businesses who require cards or access keys to be able to access buildings. 
+  Additionally, it may reduce the amount of fraud and theft due to people not requiring to carry around a key/card.
+</p>
+
+</div>
+
+
+
+
+
+
+<div class="footer">
+  <p>Johnny Le <br> Email:<a href="mailto:s3599253@student.rmit.edu.au">s3599253@student.rmit.edu.au</p>
+    <a href="../index.html">Back Home?</a>
+</div>
+
+</body>
 </html>
+
